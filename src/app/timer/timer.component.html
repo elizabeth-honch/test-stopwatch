@@ -1,11 +1,35 @@
 <div class="timer">
-  <p>{{time.toUTCString().substr(17,8)}}</p>
+  <p class="timer__time">{{time.toUTCString().substr(17,8)}}</p>
 
-  <button type="button" (click)="startTimer()">Start</button>
+  <button
+    type="button"
+    (click)="startTimer()"
+    class="timer__btn"
+  >
+    Start
+  </button>
 
-  <button type="button" (click)="stopTimer()">Stop</button>
+  <button
+    type="button"
+    (click)="stopTimer()"
+    class="timer__btn"
+  >
+    Stop
+  </button>
 
-  <button type="button" (dblclick)="waitTimer()">Wait</button>
-  
-  <button type="button" (click)="resetTimer()">Reset</button>
+  <button
+    type="button"
+    (dblclick)="waitTimer()"
+    class="timer__btn"
+  >
+    Wait
+  </button>
+
+  <button
+    type="button"
+    (click)="resetTimer()"
+    class="timer__btn"
+  >
+    Reset
+  </button>
 </div>
