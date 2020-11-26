@@ -1,0 +1,20 @@
+.timer {
+  &__time {
+    font-size: 25px;
+  }
+  &__btn {
+    margin:10px 15px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    transition: background-color 700ms, color 700ms;
+
+    &:hover {
+      cursor: pointer;
+
+      background-color: #4CAF50;
+      color: white;
+    }
+  }
+}
